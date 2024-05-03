@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace CouponAPI.Controllers
+namespace Food.Services.AuthAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

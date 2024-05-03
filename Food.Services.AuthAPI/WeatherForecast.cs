@@ -1,4 +1,4 @@
-namespace CouponAPI
+namespace Food.Services.AuthAPI
 {
     public class WeatherForecast
     {

@@ -1,3 +1,5 @@
+using AutoMapper;
+using CouponAPI;
 using CouponAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,7 +13,12 @@ builder.Services.AddDbContext<CouponDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("CouponDb"));
 });
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+//AutoMapper
+IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
+builder.Services.AddSingleton(mapper);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
