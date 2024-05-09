@@ -1,5 +1,7 @@
 using Food.Services.AuthAPI.Data;
 using Food.Services.AuthAPI.Models;
+using Food.Services.AuthAPI.Service;
+using Food.Services.AuthAPI.Service.IService;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,6 +19,10 @@ builder.Services.AddDbContext<AuthDbContext>(options =>
 });
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AuthDbContext>()
     .AddDefaultTokenProviders();
+
+builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("ApiSettings:JwtOptions"));
+
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
