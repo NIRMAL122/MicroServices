@@ -6,5 +6,6 @@ namespace Food.Services.AuthAPI.Service.IService
     {
         Task<string> Register(RegisterRequestDto requestDto);
         Task<LoginResponseDto> Login(LoginRequestDto requestDto);
+        Task<bool> AssignRole(string email, string roleName);
     }
 }
