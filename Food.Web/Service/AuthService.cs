@@ -28,7 +28,7 @@ namespace Food.Web.Service
                 ApiType = StaticDetails.ApiType.POST,
                 Data = loginRequestDto,
                 Url = StaticDetails.AuthAPIBase + "/api/auth/login"
-            });
+            }, withBearer: false);
         }
 
         public async Task<ResponseDto?> RegisterAsync(RegisterRequestDto registerRequestDto)
@@ -38,7 +38,7 @@ namespace Food.Web.Service
                 ApiType = StaticDetails.ApiType.POST,
                 Data = registerRequestDto,
                 Url = StaticDetails.AuthAPIBase + "/api/auth/register"
-            });
+            }, withBearer: false);
         }
     }
 }

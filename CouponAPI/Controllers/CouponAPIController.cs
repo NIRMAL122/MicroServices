@@ -76,6 +76,7 @@ namespace CouponAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize (Roles ="ADMIN")]
         public ResponseDto Post([FromBody]CouponDto payload)
         {
             try
@@ -95,6 +96,7 @@ namespace CouponAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Put([FromBody] CouponDto payload)
         {
             try
@@ -115,6 +117,7 @@ namespace CouponAPI.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [Authorize(Roles = "ADMIN")]
 
         public ResponseDto Delete(int id)
         {

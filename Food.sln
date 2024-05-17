@@ -5,13 +5,15 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{A86B2842-E85F-490E-8D99-239DC8EA1EAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponAPI", "CouponAPI\CouponAPI.csproj", "{E785C9DB-C5D4-4D48-A63D-8AF6D3137622}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CouponAPI", "CouponAPI\CouponAPI.csproj", "{E785C9DB-C5D4-4D48-A63D-8AF6D3137622}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{653590FA-D741-4744-8704-49BEA670B7DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.Web", "Food.Web\Food.Web.csproj", "{FB295828-41CD-41E6-AD01-7304889C33CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Food.Web", "Food.Web\Food.Web.csproj", "{FB295828-41CD-41E6-AD01-7304889C33CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.Services.AuthAPI", "Food.Services.AuthAPI\Food.Services.AuthAPI.csproj", "{7E673BB9-CDC6-4BEB-931C-6A494A866776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Food.Services.AuthAPI", "Food.Services.AuthAPI\Food.Services.AuthAPI.csproj", "{7E673BB9-CDC6-4BEB-931C-6A494A866776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.Services.ProductAPI", "Food.Services.ProductAPI\Food.Services.ProductAPI.csproj", "{507CFB40-2BD1-4034-80E8-C56AED72083F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{7E673BB9-CDC6-4BEB-931C-6A494A866776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E673BB9-CDC6-4BEB-931C-6A494A866776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E673BB9-CDC6-4BEB-931C-6A494A866776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507CFB40-2BD1-4034-80E8-C56AED72083F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507CFB40-2BD1-4034-80E8-C56AED72083F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507CFB40-2BD1-4034-80E8-C56AED72083F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507CFB40-2BD1-4034-80E8-C56AED72083F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{E785C9DB-C5D4-4D48-A63D-8AF6D3137622} = {A86B2842-E85F-490E-8D99-239DC8EA1EAC}
 		{FB295828-41CD-41E6-AD01-7304889C33CC} = {653590FA-D741-4744-8704-49BEA670B7DB}
 		{7E673BB9-CDC6-4BEB-931C-6A494A866776} = {A86B2842-E85F-490E-8D99-239DC8EA1EAC}
+		{507CFB40-2BD1-4034-80E8-C56AED72083F} = {A86B2842-E85F-490E-8D99-239DC8EA1EAC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {77C2A4E3-541E-4447-B43E-236D6EC47A06}
